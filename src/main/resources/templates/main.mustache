@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main bookshelf</title>
+</head>
+<body>
+div>
+<form method="post">
+    <input type="text" name="title" placeholder="Напишіть повідомлення"/>
+    <input type="text" name="author" placeholder="tag"/>
+    <button type="submit">Додати</button>
+</form>
+</div>
+<div> Список книг</div>
+<form method="post" action="filter">
+    <input type="text" name="filter">
+    <button type="submit">Знайти</button>
+</form>
+{{#books}}
+<div>
+    <b>{{id}}</b>
+    <span>{{bookTitle}}</span>
+    <b>{{bookAuthor}}</b>
+</div>
+{{/books}}
+</body>
+</html>

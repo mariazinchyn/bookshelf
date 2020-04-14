@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class BookController {
     @GetMapping("/")
     public String blogMain(Model model){
-        return "main";
+        return "main.mustache";
     }
 }
